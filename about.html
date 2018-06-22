@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+
+  <meta charset="utf-8" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Pflugerville Dental-Dr. Samir Gupta</title>
+
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+
+  <link rel="stylesheet" href="ligature.css">
+
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-sanitize.js"></script>
+
+  <script>
+  // place-holder for angularjs controller in case we need it
+  function indexController($scope) {
+      $scope.testvar = "placeholder_ignore";
+  }
+
+  </script>
+
+</head>
+
+<body ng-app="" ng-controller="indexController">
+
+<!-- ######################## Header ######################## -->
+<div ng-include="'header.html'"></div>
+
+<!-- ######################## Nav ######################## -->
+<!-- ######################## Section Nav ######################## -->
+
+	<nav>
+	    <div class="twelve columns header_nav">
+	    	<div class="row">
+	    		<ul id="menu-header" class="nav-bar horizontal">
+	    			<li class=""><a href="index.html">HOME</a></li>
+	    			<li class="active"><a href="about.html">About</a></li>
+	    			<li class=""><a href="newpatient.html">New Patient</a></li>
+	    			<li class=""><a href="services.html">Services</a></li>
+	    			<li class=""><a href="contact.html">Contact</a></li>
+	    		</ul>
+	    		<script type="text/javascript">
+		    	//<![CDATA[
+	         $('ul#menu-header').nav-bar();
+	          //]]>
+	        </script>
+	
+	      </div>
+	      </div>
+	
+	</nav>
+
+
+
+<!-- page content -->
+<!-- Main image -->
+	<div class="mainpic" align=center>
+	  <div><img src="siteimages/DrSamirGupta.jpg"/></div>
+	</div>
+
+<section class="section_main">
+
+      <div class="row">
+
+          <article class="twelve columns">
+                <div class="panel">
+                    <h3>About Dr. Samir Gupta</h3>   
+				      <ul style="padding:20px;">
+					      <li>Graduated from Houston Baptist University in 1996 with a bachelor of science degree in Biology and Psychology</li>
+					      <li>Earned D.D.S. from University of Texas Dental Branch, Houston TX, in 2001</li>
+					      <li>Taught dental assisting in Renton Technical College 2004-2005 (Part-time) </li>
+					      <li>For 9 years from the year 2001 to 2010, worked as an associate doctor in Houston, Seattle, and Austin   </li>  
+					      <li>Throughout the dental career, he has worked on many adults as well as kids and loves to be a "Family Dentist"</li>   
+					      <li>Established 'Pflugerville Dental' early 2011 </li>
+				      </ul>
+      
+					<h3>Accreditation and certification</h3>
+						<ul style="padding:20px;">
+					      <li>Nitrous Oxide Sedation</li>
+					     </ul>
+					 
+					<h3>Professional Memberships</h3>
+						<ul style="padding:20px;">
+					      <li>Member, American Dental Association</li>
+					      <li>Member, Texas Dental Association</li>
+					      <li>Member, Capital Area Dental Society</li>
+					      <li>Member, Washington State Dental Association</li>
+						</ul>
+                </div>
+          </article>
+
+      </div>
+
+
+</section>
+
+<!-- footer -->
+<div ng-include="'footer.html'"></div>
+
+
+<!-- ######################## Scripts ######################## -->
+
+    <!-- Included JS Files (Compressed) -->
+    <script src="javascripts/foundation.min.js" type="text/javascript"></script>
+    <!-- Initialize JS Plugins -->
+	<script src="javascripts/app.js" type="text/javascript"></script>
+
+</body>
+</html>
